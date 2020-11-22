@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            border: 40px solid red;
+            box-sizing:border-box;
+            transition: width 0.5s ease 0s,height 0.5s ease 1s;
+        }
+        .box:hover{
+            width: 500px;
+            height: 500px;
+
+        }
+        .box .son{
+            width:calc(100% -50px);
+            height: 100px;
+            background-color: pink;
+        }
+        img{
+            filter: blur(5px);
+        }
+        .box1{
+            width: 100px;
+            height: 50px;
+            padding: 1px;
+            transition: width 1s ease 0s;
+        }
+        .box1 .son{
+            width: 50%;
+            height: 100%;
+            background-color: red;
+        }
+        .box1:hover .son{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="son"></div>
+    </div>
+    <img src="../images/arr.png" alt="">
+    <div class="box1">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
